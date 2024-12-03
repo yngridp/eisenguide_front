@@ -69,10 +69,10 @@ const Dashboard: React.FC = () => {
                       <div className="task-item-icons">
                         {/* Link para a página de edição de tarefa */}
                         <button onClick={() => navigate(`/edit-task/${task.id}`)}>
-                          <img src="src/assets/editar.png" alt="Editar" />
+                          <img src="/assets/editar.png" alt="Editar" />
                         </button>
                         <button onClick={() => deleteTask(task.id)}>
-                          <img src="src/assets/deletar.png" alt="Excluir" />
+                          <img src="/assets/deletar.png" alt="Excluir" />
                         </button>
                       </div>
                     </li>
