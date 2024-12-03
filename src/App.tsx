@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home'; // Página inicial
-import Login from './components/Login'; // Página de login
+import Home from './components/Home'; 
+import Login from './components/Login'; 
 import Dashboard from './components/Dashboard'; 
 import ForgotPassword from './components/ForgotPassword';
 import Register from './components/Register';
