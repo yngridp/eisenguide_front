@@ -1,0 +1,105 @@
+/* Estilos gerais da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #D8D2EF; /* Cor de fundo roxa */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Container da página de adicionar/editar tarefa */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Formulário de criação/edição de tarefa */
+.login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário */
+    text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+    font-size: 2em;
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos inputs e select */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #4b0082;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Estilo quando os inputs estão focados */
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #800080;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #4b0082;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+/* Efeito hover do botão */
+button:hover {
+    background-color: #800080;
+}
+
+/* Estilo do textarea */
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Categoria dropdown */
+select {
+    padding: 12px;
+    border-radius: 4px;
+}
+
+/* Estilos de links, se necessários */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}

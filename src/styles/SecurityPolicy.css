@@ -1,0 +1,53 @@
+/* Garantir que a página ocupe toda a altura da tela */
+.security-policy-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   ;  /* Cor de fundo da página */
+  }
+  
+  /* Ajuste da altura da Navbar */
+.security-policy-content {
+    flex: 1;  /* Para preencher o espaço entre o Nav e o Footer */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px 50px 30px; /* Aumenta o padding-top para evitar corte pelo navbar */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  
+  .security-policy-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .security-policy-content section {
+    margin-bottom: 20px;
+  }
+  
+  .security-policy-content h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .security-policy-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .security-policy-content a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .security-policy-content a:hover {
+    text-decoration: underline;
+  }
+  

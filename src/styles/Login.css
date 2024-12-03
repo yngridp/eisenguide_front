@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #D8D2EF; /* Cor de fundo roxa */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 100%; 
+}
+
+/* Container que ocupa a tela inteira */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 100%; /* Garante que ocupe toda a largura da tela */
+  
+  
+}
+
+/* Formulário de login */
+.login-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Limita a largura do formulário */
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #4b0082;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-color: #800080;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #4b0082;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #800080;
+}
+
+p {
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+.signup-button {
+  background-color: #0ad18f;
+}
+
+.signup-button:hover {
+  background-color: #228b22;
+}
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.notification.success {
+  background-color: #4CAF50; /* Verde para sucesso */
+}
+
+.notification.error {
+  background-color: #f44336; /* Vermelho para erro */
+}
+.forgot-password-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+.forgot-password-link:hover {
+  color: #0056b3;
+}
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.notification.success {
+  background-color: #4caf50;
+}
+
+.notification.error {
+  background-color: #f44336;
+}
