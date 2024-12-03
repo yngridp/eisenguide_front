@@ -1,12 +1,12 @@
 import React from 'react';
 import '../styles/SecurityPolicy.css';
-import NavSecurity from '../components/estaticos/navbar/NavSecurity';  // Importa a navegação
-import Footer from '../components/estaticos/footer/Footer';  // Importa o rodapé
+import NavSecurity from '../components/estaticos/navbar/NavSecurity';  
+import Footer from '../components/estaticos/footer/Footer';  
 
 const SecurityPolicy: React.FC = () => {
   return (
     <div className="security-policy-container">
-      <NavSecurity />  {/* Inclui a barra de navegação */}
+      <NavSecurity />  
       <div style={{ height: '500px' }}></div>
       <div className="security-policy-content">
         <h1>Política de Segurança e Privacidade</h1>
@@ -67,7 +67,7 @@ const SecurityPolicy: React.FC = () => {
           </p>
         </section>
       </div>
-      <Footer />  {/* Inclui o rodapé */}
+      <Footer /> 
     </div>
   );
 };
