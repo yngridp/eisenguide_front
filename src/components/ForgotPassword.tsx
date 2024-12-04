@@ -21,15 +21,22 @@ const ForgotPassword: React.FC = () => {
       return;
     }
 
+    // Validação de senha
+    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (!passwordPattern.test(newPassword)) {
+      setError('A senha deve ter no mínimo 8 caracteres, uma letra maiúscula, um número e um caractere especial.');
+      return;
+    }
+
     if (!userId) {
       setError('Usuário não encontrado.');
       return;
     }
 
     try {
-      // Envia a requisição PUT para o backend com ID na URL e a nova senha no corpo da requisição
-      await axios.put('http://localhost:8080/users/update-password', {
-        email,
+      // Envia a requisição PUT para o backend com o userId na URL e a nova senha no corpo da requisição
+      await axios.put(`http://localhost:8080/users/update-password`, {
+        email, // Embora o backend não precise do email diretamente, você pode mantê-lo aqui
         novaSenha: newPassword,
       });
 
@@ -48,38 +55,39 @@ const ForgotPassword: React.FC = () => {
 
   return (
     <>
-    <div className="forgot-password-container">
-      <div className="forgot-password-form">
-        <h2>Recuperar Senha</h2>
+      <div className="forgot-password-container">
+        <div className="forgot-password-form">
+          <h2>Recuperar Senha</h2>
 
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Nova Senha"
-          value={newPassword}
-          onChange={(e) => setNewPassword(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Confirmar Nova Senha"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-        />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Nova Senha"
+            value={newPassword}
+            onChange={(e) => setNewPassword(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Confirmar Nova Senha"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
 
-        <button className="recover-button" onClick={handleUpdatePassword}>
-          Atualizar Senha
-        </button>
+          <button className="recover-button" onClick={handleUpdatePassword}>
+            Atualizar Senha
+          </button>
 
-        {message && <p className="success-message">{message}</p>}
-        {error && <p className="error-message">{error}</p>}
+          {message && <p className="success-message">{message}</p>}
+          {error && <p className="error-message">{error}</p>}
+        </div>
       </div>
-    </div>
-    <Footer></Footer></>
+      <Footer />
+    </>
   );
 };
 
