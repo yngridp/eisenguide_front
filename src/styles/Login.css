@@ -1,35 +1,33 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #D8D2EF; /* Cor de fundo roxa */
+  background-color: #D8D2EF; 
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: center;
-  height: 100vh; /* Ocupa toda a altura da tela */
+  height: 100vh; 
   width: 100%; 
 }
 
-/* Container que ocupa a tela inteira */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ocupa toda a altura da tela */
-  width: 100%; /* Garante que ocupe toda a largura da tela */
+  height: 100vh; 
+  width: 100%; 
   
   
 }
 
-/* Formulário de login */
 .login-form {
   background-color: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px; /* Limita a largura do formulário */
+  max-width: 400px; 
   text-align: center;
 }
 
@@ -107,11 +105,11 @@ p {
 }
 
 .notification.success {
-  background-color: #4CAF50; /* Verde para sucesso */
+  background-color: #4CAF50; 
 }
 
 .notification.error {
-  background-color: #f44336; /* Vermelho para erro */
+  background-color: #f44336; 
 }
 .forgot-password-link {
   color: #007bff;

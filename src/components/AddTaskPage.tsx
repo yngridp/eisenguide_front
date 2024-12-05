@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../styles/AddTaskPage.css'; // Importando o arquivo CSS
+import '../styles/AddTaskPage.css'; 
 
 const AddTaskPage: React.FC = () => {
   const [title, setTitle] = useState('');

@@ -1,21 +1,19 @@
-/* Container principal da página Contate-nos */
+
 .contact-container {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh; /* A altura da tela */
+    height: 100vh; 
     background-color: #8055BE;
     overflow: hidden;
   }
   
   @media (min-width: 768px) {
-    /* Configuração para telas maiores que 768px */
     .contact-container {
       flex-direction: row;
     }
   }
   
-  /* Imagem ocupando a metade esquerda */
   .matrix-image4 {
     flex:1;
     height: 100vh;
@@ -26,14 +24,12 @@
   }
   
   @media (min-width: 768px) {
-    /* Configuração para telas maiores que 768px */
     .matrix-image {
       width: 50%;
       height: 100%;
     }
   }
   
-  /* Conteúdo centralizado à direita */
   .contact-content {
     flex: 1;
     display: flex;
@@ -51,27 +47,27 @@
     margin-bottom: 25px;
   }
   
-  /* Estilo para os campos de input */
+  
   .contact-content input,
   .contact-content textarea {
-    width: 95%; /* Define que todos os campos terão a mesma largura */
+    width: 95%; 
     max-width: 500px;
     padding: 13px;
     margin: 10px 0;
-    border: 1px solid #9b59b6; /* Borda roxa */
+    border: 1px solid #9b59b6; 
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura */
+    box-sizing: border-box;
     background-color: #f4f4f4;
   }
   
-  /* Estilo para o campo textarea */
+  
   .contact-content textarea {
     height: 150px;
     resize: vertical;
   }
   
-  /* Botão de envio */
+  
   .contact-button {
     width: 50%;
     max-width: 200px;
@@ -90,9 +86,9 @@
     background-color: #8e44ad;
   }
   
-  /* Mensagens de sucesso e erro */
+  
   .success-message {
-    background-color: #4CAF50; /* Verde para sucesso */
+    background-color: #4CAF50; 
     margin-top: 40px;
     font-size: 16px;
     color: white;
@@ -103,10 +99,10 @@
   }
   
   .error-message {
-    background-color: #f44336; /* Fundo vermelho */
+    background-color: #f44336; 
     margin-top: 40px;
     font-size: 14px;
-    color: white; /* Texto branco */
+    color: white; 
     padding: 10px;
     border-radius: 5px;
     max-width: 80%;

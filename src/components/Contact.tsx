@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Contact.css'; // Crie esse arquivo de estilo
+import '../styles/Contact.css'; 
 import Footer from './estaticos/footer/Footer';
 import Navbar from './estaticos/navbar/Navbar';
 
@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async () => {
-    // Verificação de campos obrigatórios
+    
     if (!name || !email || !comment) {
       setError('Por favor, preencha todos os campos.');
       return;
@@ -23,9 +23,9 @@ const Contact: React.FC = () => {
     try {
       // Dados para envio via EmailJS
       const data = {
-        service_id: 'service_udigerr', // Substitua pelo seu Service ID
-        template_id: 'template_hexcxst', // Substitua pelo seu Template ID
-        user_id: 'G2MPIaTUMhDYBbSU_', // Substitua pela sua chave pública
+        service_id: 'service_udigerr', 
+        template_id: 'template_hexcxst', 
+        user_id: 'G2MPIaTUMhDYBbSU_', 
         template_params: {
           name: name,
           email: email,
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
         },
       });
 
-      // Verifica a resposta da API
+      
       if (response.status === 200) {
         setMessage('Mensagem enviada com sucesso!');
         setError('');

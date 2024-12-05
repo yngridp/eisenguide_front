@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Footer from '../components/estaticos/footer/Footer'; // Importa o Footer
+import Footer from '../components/estaticos/footer/Footer'; 
 import '../styles/Home.css';
 import '../components/estaticos/footer/Footer.css';
 
@@ -22,8 +22,6 @@ const Home: React.FC = () => {
                     <button className="start-button" onClick={handleClick}>Comece agora</button>
                 </div>
             </div>
-
-            {/* Renderiza o Footer */}
             <Footer />
         </>
     );

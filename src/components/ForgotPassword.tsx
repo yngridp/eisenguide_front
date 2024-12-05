@@ -12,16 +12,14 @@ const ForgotPassword: React.FC = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  // Suponha que o ID do usuário está armazenado no localStorage
-  const userId = localStorage.getItem('userId'); // Ou de onde você estiver recuperando o ID
-
+  
+  const userId = localStorage.getItem('userId'); 
   const handleUpdatePassword = async () => {
     if (newPassword !== confirmPassword) {
       setError('As senhas não coincidem.');
       return;
     }
 
-    // Validação de senha
     const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     if (!passwordPattern.test(newPassword)) {
       setError('A senha deve ter no mínimo 8 caracteres, uma letra maiúscula, um número e um caractere especial.');
@@ -34,16 +32,15 @@ const ForgotPassword: React.FC = () => {
     }
 
     try {
-      // Envia a requisição PUT para o backend com o userId na URL e a nova senha no corpo da requisição
+      
       await axios.put(`http://localhost:8080/users/update-password`, {
-        email, // Embora o backend não precise do email diretamente, você pode mantê-lo aqui
+        email, 
         novaSenha: newPassword,
       });
 
       setMessage('Senha atualizada com sucesso!');
       setError('');
 
-      // Redireciona para a página de login após 2 segundos
       setTimeout(() => {
         navigate('/login');
       }, 2000);

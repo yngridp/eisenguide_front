@@ -1,17 +1,16 @@
-/* Garantir que a página ocupe toda a altura da tela */
+
 .security-policy-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-   ;  /* Cor de fundo da página */
+   ;  
   }
   
-  /* Ajuste da altura da Navbar */
 .security-policy-content {
-    flex: 1;  /* Para preencher o espaço entre o Nav e o Footer */
+    flex: 1;  
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0px 20px 50px 30px; /* Aumenta o padding-top para evitar corte pelo navbar */
+    padding: 0px 20px 50px 30px; 
     font-family: Arial, sans-serif;
     line-height: 1.5;
     color: #333;

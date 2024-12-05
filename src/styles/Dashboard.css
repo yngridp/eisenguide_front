@@ -9,13 +9,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
-  width: 60%; /* Aumente ou ajuste conforme necessário */
+  width: 60%; 
 }
 
 .quadrant {
   position: relative;
-  width: 300px; /* Tamanho padrão para os quadrados */
-  height: auto; /* Ajusta dinamicamente conforme o número de tarefas */
+  width: 300px; 
+  height: auto; 
   padding: 10px;
   border-radius: 8px;
   display: flex;
@@ -36,26 +36,26 @@
 }
 
 .quadrant-0 {
-  background-color: #c6f19f; /* Verde pastel */
+  background-color: #c6f19f; 
 }
 
 .quadrant-1 {
-  background-color: #c6e7fa; /* Azul pastel */
+  background-color: #c6e7fa; 
 }
 
 .quadrant-2 {
-  background-color: #f7d8d5; /* Rosa pastel */
+  background-color: #f7d8d5; 
 }
 
 .quadrant-3 {
-  background-color: #fee28e; /* Amarelo pastel */
+  background-color: #fee28e; 
 }
 
-/* Estilo para a lista de tarefas */
+
 .task-list {
   list-style-type: none;
   padding: 0;
-  margin: 25px 0 0; /* Espaço abaixo do título */
+  margin: 25px 0 0; 
   width: 100%;
 }
 
@@ -71,7 +71,6 @@
   font-size: 11px;
 }
 
-/* Estilo para os ícones */
 .task-item-icons {
   display: flex;
   gap: 1px;
@@ -95,12 +94,11 @@
   height: 16px;
 }
 
-/* Hover para botões */
 .task-item-icons button:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para os botões de criação e filtro */
+
 button {
   margin: 5px;
   padding: 8px;
@@ -115,7 +113,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 50%; /* Reduzido para caber na tela com quadrantes */
+  width: 50%; 
   padding: 10px;
 }
 
@@ -146,13 +144,13 @@ select {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px; /* Ajuste o tamanho conforme necessário */
+  width: 20px; 
   height: 20px;
 }
 
 .dashboard-container {
-  flex: 1; /* Faz o conteúdo preencher o espaço entre a Navbar e o Footer */
+  flex: 1; 
   padding: 80px;
-  margin-top: 10px; /* Altura da Navbar, se necessário ajuste */
+  margin-top: 10px; 
   background-color: #f4f4f4;
 }

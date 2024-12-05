@@ -1,12 +1,11 @@
-/* Container principal da página de cadastro */
+
 .register-container {
   display: flex;
   width: 100vw;
-  height: 100vh; /* A altura da tela */
+  height: 100vh; 
   background-color: #8055BE;
 }
 
-/* Imagem ocupando a metade esquerda */
 .matrix-image {
   width: 50%;
   height: 100%;
@@ -16,7 +15,6 @@
   background-repeat: no-repeat;
 }
 
-/* Conteúdo centralizado à direita */
 .register-content {
   flex: 1;
   display: flex;
@@ -33,18 +31,16 @@
   margin-bottom: 20px;
 }
 
-/* Estilo para os campos de input */
 .register-content input {
-  width: 100%; /* Define que todos os campos terão a mesma largura */
+  width: 100%; 
   padding: 13px;
   margin: 10px 0;
-  border: 1px solid #9b59b6; /* Borda roxa */
+  border: 1px solid #9b59b6; 
   border-radius: 5px;
   font-size: 16px;
-  box-sizing: border-box; /* Inclui o padding e border no cálculo da largura */
+  box-sizing: border-box; 
 }
 
-/* Botão de cadastro */
 .register-button {
   width: 40%;
   padding: 10px;
@@ -61,17 +57,16 @@
   background-color: #8e44ad;
 }
 
-/* Mensagens de sucesso e erro */
 .success-message {
-  background-color: #4CAF50; /* Verde para sucesso */
+  background-color: #4CAF50; 
   margin-top: 15px;
   font-size: 16px;
   color: white;
 }
 
 .error-message {
-  background-color: #f44336; /* Fundo vermelho */
+  background-color: #f44336; 
   margin-top: 10px;
   font-size: 12px;
-  color: white; /* Texto branco */
+  color: white; 
 }

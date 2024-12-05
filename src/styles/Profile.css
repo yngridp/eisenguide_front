@@ -1,15 +1,14 @@
-/* Estilos gerais */
+
 body {
     margin: 0;
-    background-color: #D8D2EF; /* Cor de fundo roxa */
+    background-color: #D8D2EF; 
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ocupa toda a altura da tela */
+    height: 100vh; 
   }
   
-  /* Container principal do perfil */
   .profile-container {
     display: flex;
     justify-content: center;
@@ -18,7 +17,6 @@ body {
     width: 100%;
   }
   
-  /* Cartão de perfil */
   .profile-card {
     background-color: #fff;
     padding: 40px;
@@ -32,7 +30,6 @@ body {
     align-items: center;
   }
   
-  /* Imagem de perfil */
   .profile-image {
     margin-bottom: 20px;
     display: flex;
@@ -59,7 +56,6 @@ body {
     color: #4b0082;
   }
   
-  /* Informações do perfil */
   .profile-info {
     width: 100%;
   }
@@ -72,7 +68,6 @@ body {
     position: relative;
   }
   
-  /* Estilos para os campos de entrada */
   .profile-field input {
     width: 80%;
     padding: 10px;
@@ -89,7 +84,6 @@ body {
     color: #808080;
   }
   
-  /* Ícone de editar */
   .edit-icon {
     cursor: pointer;
     color: #4b0082;
@@ -100,7 +94,6 @@ body {
     color: #800080;
   }
   
-  /* Botão de atualização */
   .update-button {
     background-color: #4b0082;
     color: white;

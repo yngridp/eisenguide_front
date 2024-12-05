@@ -3,8 +3,8 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 
 const EditTaskPage: React.FC = () => {
-  const { taskId } = useParams();  // Pega o ID da tarefa da URL
-  const [task, setTask] = useState<any>(null); // Estado para armazenar os dados da tarefa
+  const { taskId } = useParams();  
+  const [task, setTask] = useState<any>(null); 
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState('');
@@ -12,11 +12,11 @@ const EditTaskPage: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Carrega a tarefa ao montar o componente
+    
     const loadTask = async () => {
       try {
         const response = await axios.get(`http://localhost:8080/tasks/${taskId}`);
-        setTask(response.data); // Armazena os dados da tarefa
+        setTask(response.data); 
         setTitle(response.data.title);
         setDescription(response.data.description);
         setCategory(response.data.category);
@@ -38,7 +38,7 @@ const EditTaskPage: React.FC = () => {
     try {
       await axios.put(`http://localhost:8080/tasks/${taskId}`, updatedTask);
       alert('Tarefa atualizada com sucesso!');
-      navigate('/dashboard'); // Redireciona após a atualização
+      navigate('/dashboard'); 
     } catch (error) {
       console.error("Erro ao atualizar tarefa:", error);
       alert("Erro ao atualizar a tarefa.");

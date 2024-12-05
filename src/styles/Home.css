@@ -1,21 +1,21 @@
 .home-container {
     display: flex;
     width: 100vw;
-    height: calc(100vh - 40px); /* Altura total menos a altura do footer */
-    margin-bottom: 40px; /* Espaço reservado para o footer */
+    height: calc(100vh - 40px); 
+    margin-bottom: 40px; 
     overflow: hidden;
     background-color: #D8D2EF !important;
 }
   
 .matrix-image1 {
-    width: 50%; /* Ocupa metade da largura da tela */
-    height: 80%; /* Define uma altura que previne o corte da imagem */
+    width: 50%;
+    height: 80%; 
     flex: 1;
     background-image: url('https://i.imgur.com/FrrqXX1.jpg') !important;
-    background-size: contain; /* Ajusta a imagem para caber dentro do container */
+    background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
-    margin: auto 0; /* Centraliza verticalmente */
+    margin: auto 0; 
 }
 
   .home-content {
@@ -26,7 +26,7 @@
     align-items: center;
     padding: 20px;
     text-align: center;
-    font-size: 1.3em; /* Ajuste para aumentar o tamanho da fonte */
+    font-size: 1.3em; 
 }
   
   .start-button {

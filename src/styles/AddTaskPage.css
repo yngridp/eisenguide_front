@@ -1,8 +1,8 @@
-/* Estilos gerais da página */
+
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #D8D2EF; /* Cor de fundo roxa */
+    background-color: #D8D2EF; 
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@ html, body {
     width: 100%;
   }
   
-  /* Container da página de adicionar tarefa */
+  
   .login-container {
     display: flex;
     justify-content: center;
@@ -20,25 +20,25 @@ html, body {
     width: 100%;
   }
   
-  /* Formulário de criação de tarefa */
+ 
   .login-form {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px; /* Limita a largura do formulário */
+    max-width: 400px; 
     text-align: center;
   }
   
-  /* Cabeçalho */
+  
   h1 {
     font-size: 2em;
     color: #4b0082;
     margin-bottom: 20px;
   }
   
-  /* Estilo dos inputs e select */
+ 
   input[type="text"],
   input[type="date"],
   textarea,
@@ -52,7 +52,7 @@ html, body {
     box-sizing: border-box;
   }
   
-  /* Estilo quando os inputs estão focados */
+  
   input[type="text"]:focus,
   input[type="date"]:focus,
   textarea:focus,
@@ -61,7 +61,7 @@ html, body {
     border-color: #800080;
   }
   
-  /* Estilo do botão */
+  
   button {
     background-color: #4b0082;
     color: white;
@@ -74,24 +74,23 @@ html, body {
     margin-top: 20px;
   }
   
-  /* Efeito hover do botão */
+  
   button:hover {
     background-color: #800080;
   }
   
-  /* Estilo do textarea */
+  
   textarea {
     resize: vertical;
     height: 100px;
   }
   
-  /* Categoria dropdown */
+  
   select {
     padding: 12px;
     border-radius: 4px;
   }
   
-  /* Estilos de links, se necessários */
   a {
     color: #1e90ff;
     text-decoration: none;

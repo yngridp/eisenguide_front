@@ -67,7 +67,7 @@ const Dashboard: React.FC = () => {
                     <li key={task.id} className="task-item">
                       <strong>{task.title}</strong>
                       <div className="task-item-icons">
-                        {/* Link para a página de edição de tarefa */}
+                        {/* edição de tarefa */}
                         <button onClick={() => navigate(`/edit-task/${task.id}`)}>
                           <img src="/assets/editar.png" alt="Editar" />
                         </button>
@@ -82,7 +82,7 @@ const Dashboard: React.FC = () => {
           ))}
         </div>
 
-        {/* Seção para Criar e Filtrar Tarefa */}
+        {/*  Criar e Filtrar Tarefa */}
         <div className="task-panel">
           <div className="task-filter">
             <h3>Filtrar tarefas por categoria</h3>

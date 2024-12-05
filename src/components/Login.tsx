@@ -14,12 +14,11 @@ const Login: React.FC = () => {
     try {
       const response = await axios.post('http://localhost:8080/auth/login', { email, password });
       
-      // Salva o token e userId/local para verificação de login
       const token = response.data.token;
-      const userId = response.data.userId; // Exemplo de userId retornado pelo backend
+      const userId = response.data.userId; 
       
       localStorage.setItem('authToken', token);
-      localStorage.setItem('userId', userId); // Salva o userId no localStorage
+      localStorage.setItem('userId', userId); 
 
       showNotification('Login feito com sucesso!', 'success');
       
@@ -31,7 +30,7 @@ const Login: React.FC = () => {
     }
   };
 
-  // Função para exibir notificações de sucesso ou erro
+  // exibir notificações de sucesso ou erro
   const showNotification = (message: string, type: string) => {
     setNotification({ message, type });
     setTimeout(() => setNotification({ message: '', type: '' }), 3000);
@@ -71,7 +70,6 @@ const Login: React.FC = () => {
           </button>
         </div>
 
-        {/* Notificação flutuante para mensagens de sucesso ou erro */}
         {notification.message && (
           <div className={`notification ${notification.type}`}>
             {notification.message}
