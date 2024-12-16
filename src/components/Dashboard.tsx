@@ -19,7 +19,7 @@ const Dashboard: React.FC = () => {
 
   const loadTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/tasks');
+      const response = await axios.get('https://eisenguide-deploy-render.onrender.com/tasks');
       setTasks(response.data || []);
     } catch (error) {
       console.error("Erro ao carregar tarefas:", error);
@@ -32,7 +32,7 @@ const Dashboard: React.FC = () => {
 
   const deleteTask = async (taskId: string) => {
     try {
-      await axios.delete(`http://localhost:8080/tasks/${taskId}`);
+      await axios.delete(`https://eisenguide-deploy-render.onrender.com/tasks/${taskId}`);
       setTasks(tasks.filter((task: { id: string; }) => task.id !== taskId));
     } catch (error) {
       console.error("Erro ao excluir tarefa:", error);

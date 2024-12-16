@@ -33,7 +33,7 @@ const ForgotPassword: React.FC = () => {
 
     try {
       
-      await axios.put(`http://localhost:8080/users/update-password`, {
+      await axios.put(`https://eisenguide-deploy-render.onrender.com/users/update-password`, {
         email, 
         novaSenha: newPassword,
       });

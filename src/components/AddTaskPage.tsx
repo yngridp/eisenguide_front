@@ -27,7 +27,7 @@ const AddTaskPage: React.FC = () => {
 
     try {
       // Envia a requisição POST
-      await axios.post('http://localhost:8080/tasks', newTask, {
+      await axios.post('https://eisenguide-deploy-render.onrender.com/tasks', newTask, {
         headers: {
           'Content-Type': 'application/json', 
         }

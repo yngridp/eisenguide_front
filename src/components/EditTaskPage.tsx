@@ -15,7 +15,7 @@ const EditTaskPage: React.FC = () => {
     
     const loadTask = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/tasks/${taskId}`);
+        const response = await axios.get(`https://eisenguide-deploy-render.onrender.com/tasks/${taskId}`);
         setTask(response.data); 
         setTitle(response.data.title);
         setDescription(response.data.description);
@@ -36,7 +36,7 @@ const EditTaskPage: React.FC = () => {
     const updatedTask = { title, description, category, objective };
 
     try {
-      await axios.put(`http://localhost:8080/tasks/${taskId}`, updatedTask);
+      await axios.put(`https://eisenguide-deploy-render.onrender.com/tasks/${taskId}`, updatedTask);
       alert('Tarefa atualizada com sucesso!');
       navigate('/dashboard'); 
     } catch (error) {

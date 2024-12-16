@@ -30,7 +30,7 @@ const Register: React.FC = () => {
     }
 
     try {
-      await axios.post('http://localhost:8080/users/register', {
+      await axios.post('https://eisenguide-deploy-render.onrender.com/users/register', {
         username,
         email,
         phone,
